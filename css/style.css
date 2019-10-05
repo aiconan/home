@@ -342,9 +342,6 @@ a:hover {
     .con .logo {
         display: none;
     }
-    .con .search_box .sug div {
-        padding: 4px 14px;
-    }
     .home, .menu, .footer {
         display: none;
     }
