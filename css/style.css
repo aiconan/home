@@ -231,7 +231,7 @@ a:hover {
     text-indent: 44px;
     font-size: 16px;
     background: #fff;
-    box-shadow: 0 0 8px #ccc;
+    box-shadow: 0 0 6px #ccc;
 }
 .con .search_box form .s_choose_open {
     top: 0px;
@@ -274,7 +274,7 @@ a:hover {
 }
 .con .search_box .sug {
     border-radius: 4px;
-    box-shadow: 0 0 8px #ccc;
+    box-shadow: 0 0 6px #ccc;
 }
 .con .search_box .sug div {
     padding: 4px 44px;
