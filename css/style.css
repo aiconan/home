@@ -336,7 +336,6 @@ a:hover {
     .con .search_box ul li {
         width: 100px;
         font-size: 12px;
-        text-indent: 30px;
     }
     .home, .menu {
         top: 5px;
@@ -346,9 +345,6 @@ a:hover {
     .con {
         margin: 0;
         top: 0px;
-    }
-    .con .search_box form .wd {
-        text-indent: 50px;
     }
     .con .logo {
         display: none;
