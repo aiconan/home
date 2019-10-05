@@ -287,6 +287,7 @@ a:hover {
     margin-left: auto;
     border-radius: 8px;
     box-shadow: 0 0 6px #ccc;
+    background-color: #FFFFFF;
 }
 .con .search_box .sug div {
     transition: 0.1s all linear;
@@ -327,14 +328,12 @@ a:hover {
     .list ul {
         width: 220px;
     }
-    /**
     .con .logo {
         display: none;
     }
     .home, .menu {
         top: 5px;
     }
-    **/
 }
 /**
 @media (max-height: 420px) {
