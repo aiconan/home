@@ -262,6 +262,11 @@ a:hover {
     width: 44px;
     margin-left: 2px;
     cursor: pointer;
+    transition: 0.1s all linear;
+    border-radius: 25px;
+}
+.con .search_box form .s_list button:hover {
+    background-color: #EEEEEE;
 }
 .con .search_box form button img {
     margin-top: 1px;
@@ -280,7 +285,7 @@ a:hover {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 0 0 6px #ccc;
 }
 .con .search_box .sug div {
@@ -289,10 +294,10 @@ a:hover {
     cursor: pointer;
 }
 .con .search_box .sug div:first-child {
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
 }
 .con .search_box .sug div:last-child {
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 8px 8px;
 }
 .con .search_box .sug div:hover {
     background: #29f;
