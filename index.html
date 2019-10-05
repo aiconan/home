@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="shortcut icon" href="./icon/favicon.ico"/>
-  <title>Simply Home Page</title>
-  <link href="./css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="./icon/favicon.ico"/>
+    <title>Simply Home Page</title>
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -28,7 +28,7 @@
             <div class="con">
                 <div class="logo"></div>
                 <div class="search_box">
-                    <form ref="form" :action="s_list[s_now].action" method="get" target="_self">
+                    <form ref="form" :action="s_list[s_now].action" method="get">
                         <button type="button" @click="s_choose = !s_choose" class="s_choose_open">
                             <img :src="s_list[s_now].icon" width="30" height="30" />
                         </button>
