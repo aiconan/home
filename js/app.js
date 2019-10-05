@@ -67,7 +67,7 @@ window.onload = function(){
             get_sug: function(t){
                 if(!t) return false;
                 this.ajax({
-                    url: 'http://unionsug.baidu.com/su?wd='+t,
+                    url: 'https://unionsug.baidu.com/su?wd='+t,
                     type: 'get',
                     dataType: 'jsonp',
                     success: function(data){
