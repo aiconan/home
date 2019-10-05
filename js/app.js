@@ -71,7 +71,11 @@ window.onload = function(){
                     type: 'get',
                     dataType: 'jsonp',
                     success: function(data){
-                        if (data.s !== []) app.s_sug = data.s || false;
+                        if (JSON.stringify(data.s) !== '[]') {
+                            app.s_sug = data.s || false;
+                        } else {
+                            app.s_sug = false;
+                        };
                     }
                 })
             }

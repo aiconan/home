@@ -228,7 +228,8 @@ a:hover {
     display: block;
     border-radius: 25px;
     line-height: 100%;
-    text-indent: 44px;
+    padding-left: 44px;
+    padding-right: 34px;
     font-size: 16px;
     background: #fff;
     box-shadow: 0 0 6px #ccc;
@@ -283,8 +284,19 @@ a:hover {
     box-shadow: 0 0 6px #ccc;
 }
 .con .search_box .sug div {
+    transition: 0.1s all linear;
     padding: 4px 14px;
     cursor: pointer;
+}
+.con .search_box .sug div:first-child {
+    border-radius: 4px 4px 0px 0px;
+}
+.con .search_box .sug div:last-child {
+    border-radius: 0px 0px 4px 4px;
+}
+.con .search_box .sug div:hover {
+    background: #29f;
+    color: #fff;
 }
 .footer {
     position: absolute;
