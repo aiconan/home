@@ -269,7 +269,7 @@ a:hover {
     background-color: #EEEEEE;
 }
 .con .search_box form button img {
-    margin-top: 1px;
+    margin-top: 3px;
 }
 .con .search_box form .wd:hover {
     cursor: pointer;
