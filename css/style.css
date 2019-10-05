@@ -335,7 +335,6 @@ a:hover {
         top: 5px;
     }
 }
-/**
 @media (max-height: 420px) {
     .con {
         margin: 0;
@@ -348,7 +347,6 @@ a:hover {
         display: none;
     }
 }
-**/
 .slide-fade-enter-active {
     transition: all .3s ease;
 }
