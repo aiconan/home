@@ -28,7 +28,7 @@
             <div class="con">
                 <div class="logo"></div>
                 <div class="search_box">
-                    <form :action="s_list[s_now].action" method="get" target="_self">
+                    <form ref="form" :action="s_list[s_now].action" method="get" target="_self">
                         <button type="button" @click="s_choose = !s_choose" class="s_choose_open">
                             <img :src="s_list[s_now].icon" width="30" height="30" />
                         </button>
@@ -43,7 +43,7 @@
                     </form>
                     <transition name="fade">
                         <div class="sug" v-show="s_sug && s_text">
-                            <div v-for="(value, index) in s_sug" v-show="index < 6" v-text="value" @click="s_text = value; s_sug = false"></div>
+                            <div v-for="(value, index) in s_sug" v-show="index < 6" v-text="value" @click="s_text = value; s_sug = false; $refs.form.submit()"></div>
                         </div>
                     </transition>
                     <div class="s_list"></div>
