@@ -73,28 +73,28 @@ var list = {
     ]
 }
 var s_list = {
-        baidu: {
-            name: '百度',
-            icon: './icon/baidu.png',
-            action: 'https://www.baidu.com/s?ie=utf-8',
-            s_name: 'wd'
-        },
-        google: {
-            name: 'Google',
-            icon: './icon/google.png',
-            action: 'https://www.google.com/search?hl=zh-CN',
-            s_name: 'q'
-        },
-        360: {
-            name: '360',
-            icon: './icon/360.png',
-            action: 'https://www.so.com/s',
-            s_name: 'q'
-        },
-        duckduckgo: {
-            name: 'DuckDuckGo',
-            icon: './icon/duckduckgo.png',
-            action: 'https://www.duckduckgo.com/s',
-            s_name: 'q'
-        }
+    baidu: {
+        name: '百度',
+        icon: './icon/baidu.png',
+        action: 'https://www.baidu.com/s?ie=utf-8',
+        s_name: 'wd'
+    },
+    google: {
+        name: 'Google',
+        icon: './icon/google.png',
+        action: 'https://www.google.com/search?hl=zh-CN',
+        s_name: 'q'
+    },
+    360: {
+        name: '360',
+        icon: './icon/360.png',
+        action: 'https://www.so.com/s',
+        s_name: 'q'
+    },
+    duckduckgo: {
+        name: 'DuckDuckGo',
+        icon: './icon/duckduckgo.png',
+        action: 'https://www.duckduckgo.com/s',
+        s_name: 'q'
     }
+}
