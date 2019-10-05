@@ -28,7 +28,7 @@
             <div class="con">
                 <div class="logo"></div>
                 <div class="search_box">
-                    <form ref="form" :action="s_list[s_now].action" method="get">
+                    <form :action="s_list[s_now].action" method="get">
                         <button type="button" @click="s_choose = !s_choose" class="s_choose_open">
                             <img :src="s_list[s_now].icon" width="30" height="30" />
                         </button>
@@ -39,11 +39,11 @@
                                 </button>
                             </div>
                         </transition>
-                        <input class="wd" type="text" :placeholder="'在【'+s_list[s_now].name+'】上搜索'" :name="s_list[s_now].s_name" autocomplete="off" v-model="s_text" @keyup="get_sug(s_text)">
+                        <input class="wd" type="text" ref="input" :placeholder="'在【'+s_list[s_now].name+'】上搜索'" :name="s_list[s_now].s_name" autocomplete="off" v-model="s_text" @keyup="get_sug(s_text)">
                     </form>
                     <transition name="fade">
                         <div class="sug" v-show="s_sug && s_text">
-                            <div v-for="(value, index) in s_sug" v-show="index < 6" v-text="value" @click="s_text = value; s_sug = false; $refs.form.submit()"></div>
+                            <div v-for="(value, index) in s_sug" v-show="index < 6" v-text="value" @click="s_text = value; s_sug = false;"></div>
                         </div>
                     </transition>
                     <div class="s_list"></div>
