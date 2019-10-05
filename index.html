@@ -43,7 +43,7 @@
                     </form>
                     <transition name="fade">
                         <div class="sug" v-show="s_sug && s_text">
-                            <div v-for="(value, index) in s_sug" v-show="index < 6" v-text="value" @click="s_text = value; s_sug = false;"></div>
+                            <div v-for="(value, index) in s_sug" v-show="index < 6" v-text="value" @click="s_text = value; s_sug = false"></div>
                         </div>
                     </transition>
                     <div class="s_list"></div>
