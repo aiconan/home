@@ -7,8 +7,12 @@ window.onload = function(){
             s_list: s_list,
             s_choose: false,
             s_text: null,
-            s_now: 'baidu',
+            s_now: 'yooyle',
             s_sug: false
+        },
+        mounted: function(){
+            document.oncontextmenu=new Function("event.returnValue=false");  
+            document.onselectstart=new Function("event.returnValue=false");  
         },
         methods: {
             ajax: function(obj){

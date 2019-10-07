@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="./icon/favicon.ico"/>
+    <link rel="shortcut icon" href="./favicon.ico"/>
     <title>Simply Home Page</title>
     <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -30,12 +30,12 @@
                 <div class="search_box">
                     <form :action="s_list[s_now].action" method="get">
                         <button type="button" @click="s_choose = !s_choose" class="s_choose_open">
-                            <img :src="s_list[s_now].icon" width="30" height="30" />
+                            <img :src="s_list[s_now].icon" width="30" height="30" ondragstart="return false"/>
                         </button>
                         <transition name="slide-fade">
                             <div class="s_list" v-show="s_choose" @click="s_choose = false">
                                 <button type="button" v-for="(item, title) in s_list" @click="s_now = title" v-show="title !== s_now">
-                                    <img :src="item.icon" width="30" height="30" />
+                                    <img :src="item.icon" width="30" height="30" ondragstart="return false"/>
                                 </button>
                             </div>
                         </transition>

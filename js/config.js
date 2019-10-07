@@ -73,6 +73,12 @@ var list = {
     ]
 }
 var s_list = {
+    yooyle: {
+        name: 'Yooyle',
+        icon: './icon/yooyle.png',
+        action: 'https://aiconan.github.io/yooyle_web/search.html',
+        s_name: 'query'
+    },
     baidu: {
         name: '百度',
         icon: './icon/baidu.png',

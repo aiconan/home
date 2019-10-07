@@ -328,6 +328,9 @@ a:hover {
     .list ul {
         width: 220px;
     }
+    .con {
+        height: 440px;
+    }
     /**
     .con .logo {
         display: none;
