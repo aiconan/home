@@ -34,7 +34,7 @@
                         </button>
                         <transition name="slide-fade">
                             <div class="s_list" v-show="s_choose" @click="s_choose = false">
-                                <button type="button" v-for="(item, title) in s_list" @click="s_now = title" v-show="title !== s_now">
+                                <button type="button" v-for="(item, title) in s_list" @click="s_now = title" v-show="title !== s_now && title !== 'yooyle'">
                                     <img :src="item.icon" width="30" height="30" ondragstart="return false"/>
                                 </button>
                             </div>
